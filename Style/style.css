@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Italianno&display=swap');
+
+:root {
+  --main-color: #06c;
+  --color1: #2e1e45;
+  --color2: #612a52;
+  --color3: #ba3259;
+  --color4: #ff695c;
+  --color5: #ccbca1;
+}
+
+#purpuraa1 {
+  color: var(--color1);
+}
+
+textarea {
+  resize: none;
+}
+
+
+body {
+  background-color: powderblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  font-family:  sans-serif;
+  font-style: bold;
+
+  font-size: 4rem;
+  font-stretch:narrower ;
+
+
+  background-color: transparent rgb(121, 121, 121);
+
+  background-image: url(../Imagenes/Potemkin.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: scroll;
+
+  opacity: 0.9;
+
+  border: 1rem;
+
+
+
+  text-transform: capitalize;
+  text-align: center;
+
+
+  padding-bottom: 65rem;
+}
+
+.enLinea{
+  display:inline
+}
+
+.tarjeta {
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+
+.tituloVerde{
+
+  font-family: Italianno;
+  font-size: 4rem;
+  background-image: radial-gradient(grey,paleGreen)!important;
+  color: transparent!important;
+  background-clip: text!important;
+  margin-bottom: 50rem;
+
+
+}
+
+.tituloRojo{
+
+  font-family: Italianno;
+  font-size: 4rem;
+  background-image: radial-gradient(red,white)!important;
+  color: transparent!important;
+  background-clip: text!important;
+  margin-bottom: 50rem;
+
+
+}
+
+.fondoGris{
+  background-color: gray!important;
+}
+
+.Navegacion {
+
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+  color: rgb(255, 40, 40);
+  align-content: center;
+  background: repeating-linear-gradient(rgba(240, 248, 255, 0.527) 0% 49%, lightgrey 51% 100%);
+  opacity: 0.75;
+  padding: 0.0rem;
+  border: 0.0rem transparent;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(68, 68, 68);
+  border-color: tomato;
+  color: #ffffff;
+  text-align: center;
+  font-size: 100%;
+  padding: 0.5rem;
+  opacity: 0.8;
+}
+
+.fotito {
+  background-image: url(../Imagenes/Coollogo.png);
+  background-color: powderblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: linen;
+
+}
+
+.FondoDefault {
+  background: radial-gradient(circle at 80%, white 0% 39.5%, black 40.5% 40.5% , white 41.5% 42% , black 43% 80%, white 81% 81%, black 82%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+
+
+
+
+.centrado {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.Formulario {
+  color: #06c;
+  background: rgb(68, 68, 68);
+  border: solid 0.11rem #555;
+  text-align: start;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.formatoVerticalEvenly {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+
+}
+
+
+.formatoHorizontalBetween {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+
+}
+
+
+.formatoHorizontalAround {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-around;
+
+}
+
+
+.formatoHorizontalCentrado {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+
+}
+.formatoHorizontalEvenly {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+
+}
+
+
+
+
+.introCaja {
+  background:lavender;
+  background-image: url(../Imagenes/op-rosario.jpg);
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: safe;
+  align-content: safe;
+  padding: 5rem;
+
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: lavender;
+  padding: 40px;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+
+
+
+
+
