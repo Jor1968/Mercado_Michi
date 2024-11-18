@@ -119,9 +119,10 @@ header {
 
   color: rgb(255, 40, 40);
   align-content: center;
+  text-align: center;
   background: repeating-linear-gradient(rgba(240, 248, 255, 0.527) 0% 49%, lightgrey 51% 100%);
   opacity: 0.75;
-  padding: 0.0rem;
+  padding: 1rem;
   border: 0.0rem transparent;
 }
 
