@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Italianno&display=swap');
 
+
+*{
+  text-align: center;
+  box-sizing: border-box;
+}
+
 :root {
   --main-color: #06c;
   --color1: #2e1e45;
