@@ -60,7 +60,7 @@ header {
 .tarjeta {
   background: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  max-width: 160rem;
   margin: auto;
   text-align: center;
   font-family: arial;
@@ -68,7 +68,7 @@ header {
 
 .title {
   color: grey;
-  font-size: 18px;
+  font-size: 4rem;
 }
 
 
@@ -109,6 +109,7 @@ header {
 .Navegacion {
 
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  width: 100%;
 
   color: rgb(255, 40, 40);
   align-content: center;
@@ -150,7 +151,7 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100%;
 }
 
 .Formulario {
@@ -232,13 +233,48 @@ footer {
   display: grid;
   grid-template-columns: auto auto auto;
   background-color: lavender;
-  padding: 40px;
-  row-gap: 20px;
-  column-gap: 20px;
+  padding: 3rem;
+  row-gap: 3rem;
+  column-gap: 3rem;
 }
 
+/* Media Queries para hacerlo responsivo */
+
+/* Pantallas grandes (escritorios) */
+@media screen and (min-width: 1024px) {
+  nav ul {
+      justify-content: flex-start;
+  }
+
+  nav ul li {
+      margin: 0 30px;
+  }
+
+  .content {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+}
+
+/* Pantallas medianas (tablets) */
+@media screen and (max-width: 1024px) {
+  nav ul {
+      justify-content: space-around;
+  }
+
+  .content {
+      padding: 15px;
+  }
+}
+
+/* Pantallas pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+  header {
+      text-align: center;
+  }
 
 
 
 
+}
 
