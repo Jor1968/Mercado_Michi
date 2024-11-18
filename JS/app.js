@@ -6,7 +6,7 @@ var boollo = true;
 
 //let nombre = prompt("ingrese un nombre");
 
-console.log(nombre);
+//console.log(nombre);
 //alert(nombre);
 
 function goToURL(url){
