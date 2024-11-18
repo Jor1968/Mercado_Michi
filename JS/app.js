@@ -15,7 +15,7 @@ function goToURL(url){
 
 function catDispenser() {
     alert("Michi!");
-    show_image("https://jor1968.github.io/Sitio_Prueba/Imagenes/Michi1.jpg",
+    show_image("https://jor1968.github.io/Mercado_Michi/Imagenes/michi1.jpg",
             300, 200,"Michencio");
         
 }
