@@ -34,6 +34,7 @@ header {
   background-color: transparent rgb(121, 121, 121);
 
   background-image: url(../Imagenes/Potemkin.jpg);
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -95,6 +96,12 @@ header {
 
 }
 
+.imagenPorcentaje{
+
+  width:100%;
+  
+}
+
 .fondoGris{
   background-color: gray!important;
 }
@@ -124,15 +131,7 @@ footer {
   opacity: 0.8;
 }
 
-.fotito {
-  background-image: url(../Imagenes/Coollogo.png);
-  background-color: powderblue;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  color: linen;
 
-}
 
 .FondoDefault {
   background: radial-gradient(circle at 80%, white 0% 39.5%, black 40.5% 40.5% , white 41.5% 42% , black 43% 80%, white 81% 81%, black 82%);
@@ -215,6 +214,7 @@ footer {
 .introCaja {
   background:lavender;
   background-image: url(../Imagenes/op-rosario.jpg);
+  width: 100%;
   opacity: 0.9;
   background-repeat: no-repeat;
   background-size: cover;
