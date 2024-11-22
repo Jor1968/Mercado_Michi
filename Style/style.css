@@ -4,6 +4,7 @@
 *{
   text-align: center;
   box-sizing: border-box;
+  margin: auto;
 }
 
 :root {
@@ -41,6 +42,8 @@ header {
 
   background-image: url(../Imagenes/Potemkin.jpg);
   width: 100%;
+  max-width: 160rem;
+  margin: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -182,25 +185,6 @@ footer {
 
 }
 
-
-.formatoHorizontalBetween {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: space-between;
-
-}
-
-
-.formatoHorizontalAround {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: space-around;
-
-}
-
-
 .formatoHorizontalCentrado {
   display: flex;
   flex-direction: row;
@@ -232,6 +216,7 @@ footer {
   justify-content: safe;
   align-content: safe;
   padding: 5rem;
+  max-width: 160rem;
 
 
 }
@@ -243,6 +228,22 @@ footer {
   padding: 3rem;
   row-gap: 3rem;
   column-gap: 3rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 /* Media Queries para hacerlo responsivo */
@@ -277,6 +278,7 @@ footer {
 /* Pantallas pequeñas (móviles) */
 @media screen and (max-width: 768px) {
   header {
+    
       text-align: center;
   }
 
