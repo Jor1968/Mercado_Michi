@@ -37,9 +37,9 @@ function show_image(src, width, height,alt) {
 }
 
 function gong(){
-var audio = new Audio("C:\Users\Gian\Desktop\Cosas escuela tramites\ejemplo_sitio html\Sonidos\gong.mp3");
+var audio = new Audio("https://jor1968.github.io/Mercado_Michi/index/Sonidos/Quack.m4a'");
 audio.play();
-alert("GONG!");
+alert("Miau");
 }
 
 //alert(nombre)
