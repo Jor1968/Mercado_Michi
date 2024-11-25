@@ -108,6 +108,26 @@ nav{
   overflow:auto;
 }
 
+
+.flex-container-row > .tarjeta {
+  background: rgb(238,174,202);
+  background-color: rgba(112, 98, 98, 0.747);
+  margin: 5px;
+  padding: 5px;
+  font-size: 0.8rem;
+  max-height:100%;
+  max-width:100%;
+  overflow:auto;
+}
+
+
+
+
+
+
+
+
+
 .flex-container > video {
   background-color: #f1f1f1;
   margin: 10px;
@@ -163,10 +183,10 @@ nav{
   overflow:auto;
 }
 
-.targeta > img{
+.tarjeta > img{
   background-color: #000000;
-  margin: 2rem;
-  padding: 2rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
   max-height:100%;
   max-width:100%;
   height: auto;
