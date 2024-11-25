@@ -12,17 +12,20 @@ nav{
   justify-content: center;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: rgb(255, 40, 40);
-  background: repeating-linear-gradient(rgba(240, 248, 255, 0.527) 0% 49%, lightgrey 51% 100%);
+  background: repeating-linear-gradient(rgba(255, 255, 255, 0.527) 0% 49%, rgba(0, 0, 0, 0.507) 51% 100%);
 }
 
 
 .flex-container {
   display: flex;
   flex-direction: column;
-  background-color: DodgerBlue;
+  background-color: rgba(230, 123, 36, 0.199);
   height: auto;
+  justify-content: center;
+  align-items: center;
   max-height:100%;
   max-width:100%;
+  opacity: 100%;
   
 
 }
@@ -30,7 +33,7 @@ nav{
 .flex-container-row {
   display: flex;
   flex-direction: row;
-  background-color: DodgerBlue;
+  background-color: rgba(255, 255, 255, 0);
   height: auto;
   max-height:100%;
   max-width:100%;
@@ -38,23 +41,67 @@ nav{
 
 }
 
+
+.flex-container-row-bottom {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 0, 0, 0.76);
+  height: auto;
+  max-height:100%;
+  max-width:100%;
+  
+
+}
+
+.flex-container-row-title {
+  display: flex;
+  flex-direction: row;
+  color: rgba(117, 29, 29, 0.774);
+  justify-content: center;
+  background: transparent;
+  font-size: 6.5rem;
+
+  
+
+}
+
+.italianno-regular {
+  font-family: "Italianno", cursive;
+  font-size: 6.5rem;
+  font-weight: 1000;
+  background-color: red;
+  background: radial-gradient(rgba(255, 94, 0, 0.527) 0% 49%, rgba(0, 0, 0, 0.507) 51% 100%);
+}
+
 .bg{
   background-color: transparent rgb(121, 121, 121);
 
   background-image: url("../Imagenes/Potemkin.jpg");
+  opacity: 100%;
   width: 100%;
   max-width: 100%;
-  margin: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-attachment: scroll;
+}
+
+.bgDefault{
+
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,163,233,1) 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
-  background-attachment: scroll;
+  background-attachment: fixed;
+
+  
 }
 
 .flex-container > img {
   background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
+  margin: 6rem;
+  padding: 6rem;
   font-size: 30px;
   max-height:100%;
   max-width:100%;
@@ -70,17 +117,20 @@ nav{
   max-width:100%;
   overflow:auto;
 }
-flex-container-row > li {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
+.rowItem{
+  background: rgb(238,174,202);
+  background-color: rgba(112, 98, 98, 0.747);
+  margin: 5px;
+  padding: 5px;
+  font-size: 0.8rem;
   max-height:100%;
   max-width:100%;
   overflow:auto;
 
 
 }
+
+
 
 .flex-container-row > img {
   background-color: #f1f1f1;
