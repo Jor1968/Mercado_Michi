@@ -206,14 +206,48 @@ nav{
   gap: 1rem;
 
 }
+.Formulario{
+  background-color: rgba(127, 255, 212, 0.466);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 4rem;
+  padding: 4rem;
+  font-size: 2rem;
+  font-weight: 2rem;
+
+
+}
+.Formulario > textarea{
+  resize: none 
+
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+
+}
 
 @media (min-width: 300px) {
   .tarjetas {grid-template-columns: repeat(1, 1fr)}
+  .Formulario{
+    font-size: 1rem;
+    font-weight: 1rem;
+
+
+  }
 }
 
 
 @media (min-width: 800px) {
   .tarjetas{
     grid-template-columns: repeat(4, 1fr);}
+    .Formulario{
+      font-size: 2rem;
+      font-weight: 2rem;
 }
-
+}
