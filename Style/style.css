@@ -202,6 +202,18 @@ nav{
   width: auto;
   margin: 2rem;
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 
 }
+
+@media (min-width: 300px) {
+  .tarjetas {grid-template-columns: repeat(1, 1fr)}
+}
+
+
+@media (min-width: 800px) {
+  .tarjetas{
+    grid-template-columns: repeat(4, 1fr);}
+}
+
