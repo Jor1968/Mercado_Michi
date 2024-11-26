@@ -15,6 +15,13 @@ nav{
   background: repeating-linear-gradient(rgba(255, 255, 255, 0.527) 0% 49%, rgba(0, 0, 0, 0.507) 51% 100%);
 }
 
+header{
+  background-color: rgba(233, 235, 255, 0.123);
+  padding: 0.1rem;
+
+
+}
+
 
 .flex-container {
   display: flex;
@@ -236,10 +243,14 @@ footer{
   .tarjetas {grid-template-columns: repeat(1, 1fr)}
   .Formulario{
     font-size: 1rem;
-    font-weight: 1rem;
+    font-weight: 1rem;}
+    .italianno-regular {
+      font-size: 2.5rem;
+    }
 
 
-  }
+
+  
 }
 
 
@@ -248,6 +259,8 @@ footer{
     grid-template-columns: repeat(4, 1fr);}
     .Formulario{
       font-size: 2rem;
-      font-weight: 2rem;
-}
+      font-weight: 2rem;}
+      .italianno-regular {
+        font-size: 6.5rem;
+      }
 }

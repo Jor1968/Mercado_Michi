@@ -36,10 +36,9 @@ function show_image(src, width, height,alt) {
     document.body.appendChild(img);
 }
 
-function gong(){
-var audio = new Audio("https://jor1968.github.io/Mercado_Michi/index/Sonidos/Quack.mp3'");
+function Quack(){
+var audio = new Audio("https://jor1968.github.io/Mercado_Michi/Sonidos/Quack.mp3");
 audio.play();
-alert("Miau");
 }
 
 //alert(nombre)
