@@ -4,13 +4,24 @@
 <head>
 
     <title> Michis inicio </title>
+    <link rel="icon" href="Imagenes/michi1.ico">
+
+
+
     <meta charset="UTF-8">
     <link rel="stylesheet" href="Style\style.css">
-    <script src="JS/app.js"></script>
-    <link rel="icon" href="Imagenes/michi1.ico">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="JS/app.js"></script>
+  
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
 
 </head>
 
@@ -18,23 +29,51 @@
 
 
 
+
+<!-- 
+
     <nav>
-        <li class="flex-container-row" >
-            <ul class="rowItem"><a href="https://jor1968.github.io/Mercado_Michi/index.html" > Inicio</a></ul>
-            <ul class="rowItem"><a href="https://jor1968.github.io/Mercado_Michi/Paginas/Productos.html" > Productos</a></ul>
-            <ul class="rowItem"><a href="https://jor1968.github.io/Mercado_Michi/Paginas/Reseñas.html" > Reseñas</a></ul>
-            <ul class="rowItem"><a href="https://jor1968.github.io/Mercado_Michi/Paginas/Contactos.html"> Contactos</a></ul>
+        <li class="flex-container-row">
+            <ul class="rowItem"><a href="https://jor1968.github.io/Mercado_Michi/index.html"> Inicio</a></ul>
+            <ul class="rowItem"><a href="https://jor1968.github.io/Mercado_Michi/Paginas/Productos.html"> Productos</a>
+            </ul>
+            <ul class="rowItem"><a href="https://jor1968.github.io/Mercado_Michi/Paginas/Reseñas.html"> Reseñas</a></ul>
+            <ul class="rowItem"><a href="https://jor1968.github.io/Mercado_Michi/Paginas/Contactos.html"> Contactos</a>
+            </ul>
 
         </li>
 
+    </nav> -->
 
-
-    </nav>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://jor1968.github.io/Mercado_Michi/index.html">Inicio</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Inicio</a></li>
+              <li><a href="https://jor1968.github.io/Mercado_Michi/Paginas/Productos.html">Productos</a></li>
+              <li><a href="https://jor1968.github.io/Mercado_Michi/Paginas/Reseñas.html">Reseñas</a></li>
+              <li><a href="https://jor1968.github.io/Mercado_Michi/Paginas/Contactos.html"></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav> 
 
 
 
     <header>
-        <h1 >
+        <h1>
 
             <p onclick="goToURL('https://jor1968.github.io/Mercado_Michi/index.html')" class="flex-container-row-title">
 
@@ -42,14 +81,14 @@
 
 
             </p>
-           
+
 
         </h1>
 
 
 
 
-        
+
 
     </header>
 
@@ -57,27 +96,27 @@
 
         <div class="flex-container">
 
-            
-            <video src="Clips/Fantozzi.mp4" alt="Fantozzi" controls > </video>
 
-            
+            <video src="Clips/Fantozzi.mp4" alt="Fantozzi" controls> </video>
 
-           
+
+
+
 
             <img src="Imagenes/one-eye-on-you.jpg" alt="Gato pirata" onclick="Quack()">
 
 
-       
-            <img src="Imagenes/GatoPaj.jpg" alt="Gato Argentino" onclick="Quack()"> 
 
-            </div>
+            <img src="Imagenes/GatoPaj.jpg" alt="Gato Argentino" onclick="Quack()">
 
-            
+        </div>
 
 
-    
 
-        
+
+
+
+
 
 
 

@@ -12,8 +12,8 @@ nav{
   justify-content: center;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: rgb(255, 40, 40);
-  background: repeating-linear-gradient(rgba(255, 255, 255, 0.527) 0% 49%, rgba(0, 0, 0, 0.507) 51% 100%);
-}
+  background: repeating-linear-gradient(rgba(70, 68, 68, 0.527) 0% 49%, rgba(0, 0, 0, 0.507) 51% 100%);
+} 
 
 header{
   background-color: rgba(233, 235, 255, 0.123);
@@ -184,7 +184,7 @@ header{
   background-color: rgba(112, 98, 98, 0.747);
   margin: 1rem;
   padding: 1rem;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   max-height:100%;
   max-width:100%;
   overflow:auto;
