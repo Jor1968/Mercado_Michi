@@ -3,14 +3,70 @@ var a = 3;
 
 var boollo = true;
 
+// if((typeof(Storage)) !== 'undefined'){
+//     alert('localstorage disponible')
+// }else{
+//     alert('local storage not disponible')
+// }
+
+
+
+
 
 //let nombre = prompt("ingrese un nombre");
-
 //console.log(nombre);
 //alert(nombre);
 
+// let btn = document.querySelector('#btn1');
+// btn.addEventListener('click', ()=> {
+//     let nuevoNombre = document.querySelector('#nuevoNombre')
+//     document.querySelector('#nombre').innerHTML = nuevoNombre.value
+// });
+
+
+
+
+
+
+
+
+var campos = document.querySelectorAll("label > textarea , label > input");
+
+
+console.log(campos);
+
+let botonPegar = document.querySelector('#pegar');
+botonPegar.addEventListener('click', ()=> {
+console.log(cadenaTodasVacias(campos));
+// console.log(campos[0].value)
+// console.log(campos[1].value)
+// console.log(campos[2].value)
+});
+
+function cadenaTodasVacias(campos){
+    let estaVacia = true;
+    for(i = 0; i < campos.length; i++){
+        console.log(campos[i].value);
+        console.log("coso");
+        console.log(campos[i].value == "");
+        estaVacia = estaVacia && campos[i].value == "" ;
+        
+    }
+return estaVacia;
+
+}
+
+
+
+
+
 function goToURL(url){
     window.location = url;
+}
+
+
+function formularioLleno(url){
+    
 }
 
 function catDispenser() {
