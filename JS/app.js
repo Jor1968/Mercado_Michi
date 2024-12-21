@@ -33,26 +33,41 @@ var boollo = true;
 var campos = document.querySelectorAll("label > textarea , label > input");
 
 
+chequearCamposLlenos(campos);
 console.log(campos);
 
 let botonPegar = document.querySelector('#pegar');
 botonPegar.addEventListener('click', ()=> {
-console.log(cadenaTodasVacias(campos));
+chequearCamposLlenos(campos)
+// console.log(cadenasTodasLlenas(campos));
 // console.log(campos[0].value)
 // console.log(campos[1].value)
 // console.log(campos[2].value)
 });
 
-function cadenaTodasVacias(campos){
-    let estaVacia = true;
+
+function chequearCamposLlenos(campos){
+    if(cadenasTodasLlenas(campos)){
+        console.log("El formulario esta completo")
+    }
+    else{
+        console.log("El formulario no esta completo")
+
+    }
+
+
+}
+
+function cadenasTodasLlenas(campos){
+    let estaLlena = true;
     for(i = 0; i < campos.length; i++){
-        console.log(campos[i].value);
-        console.log("coso");
-        console.log(campos[i].value == "");
-        estaVacia = estaVacia && campos[i].value == "" ;
+        // console.log(campos[i].value);
+        // console.log("coso");
+        // console.log(campos[i].value == "");
+        estaLlena = estaLlena && !campos[i].value == "" ;
         
     }
-return estaVacia;
+return estaLlena;
 
 }
 
