@@ -90,7 +90,7 @@ function cargarIluminati(){
                 img.width = 686;
                 img.height = 386;
                 img.alt = 'cacker';
-                document.ListaUsuarios.appendChild(img);
+                ListaUsuarios.appendChild(img);
 
 
 
