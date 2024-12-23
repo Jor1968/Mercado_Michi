@@ -96,21 +96,17 @@
 
 
 
-<!-- 
-        <div id="checkout-modal" >
+      <div id="checkout-modal">
         <div class="checkout-content">
-
-
-        <button id="realizar-compra">Vaciar Carrito</button>
-        <button id="cerrar-checkout">Checkout</button>
-          
-
-
-
-
+            <h2>Finalizar Compra</h2>
+            <p>Subtotal: $<span id="modal-subtotal">0</span></p>
+            <p>Descuento: $<span id="modal-descuento">0</span></p>
+            <p>IVA: $<span id="modal-iva">0</span></p>
+            <p><strong>Total a Pagar: $<span id="modal-total">0</span></strong></p>
+            <button onclick="realizarCompra()">Confirmar Compra</button>
+            <button onclick="cerrarCheckout()">Cancelar</button>
         </div>
-
-        </div> -->
+    </div>
 
 
     
@@ -126,8 +122,8 @@
             <p>IVA (21%): $<span id="iva-carrito"> 0</span></p>
             <p><strong>Total: $<span id="total-carrito"> 0</span></strong></p>
             
-            <button id="vaciar-carrito">Vaciar Carrito</button>
-            <button id="mostrarCheckout">Checkout</button>
+            <button onclick="vaciarCarrito()" id="vaciar-carrito" >Vaciar Carrito</button>
+            <button onclick="mostrarCheckout()" id="mostrarCheckout" >Checkout</button>
             
             </div>
     

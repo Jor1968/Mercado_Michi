@@ -80,6 +80,14 @@ header{
   background: radial-gradient(rgba(255, 94, 0, 0.527) 0% 49%, rgba(0, 0, 0, 0.507) 51% 100%);
 }
 
+.italianno-blanco {
+  font-family: "Italianno", cursive;
+  font-size: 3.2rem;
+  font-weight: 1000;
+  color: red;
+
+}
+
 .bg{
   background-color: transparent rgb(121, 121, 121);
 
@@ -237,6 +245,24 @@ footer{
   color: white;
   text-align: center;
 
+}
+
+#checkout-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+.checkout-content {
+  background-color: rgb(240, 129, 129);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
 }
 
 @media (min-width: 300px) {
