@@ -82,9 +82,10 @@ header{
 
 .italianno-blanco {
   font-family: "Italianno", cursive;
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   font-weight: 1000;
-  color: red;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
 
 }
 

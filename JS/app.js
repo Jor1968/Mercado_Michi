@@ -75,15 +75,33 @@ function cargarIluminati(){
         fetch('https://fakestoreapi.com/users?limit=5')
             .then(res=>res.json())
             .then(data=>  {
+                const listaEntera = JSON.stringify(data);
+                var myArray = listaEntera.split("{");
+                var myArray = listaEntera.split("}");
+
+                for(i=0; i < myArray.length; i++){
                 const li = document.createElement('li');
                 li.className = "italianno-blanco";
-                li.innerText = JSON.stringify(data);
+                li.innerText = myArray[i];
                 let ListaUsuarios = document.querySelector("#ListaUsuarios");
+
+                let img = document.createElement("img");
+                img.src = "https://jor1968.github.io/Mercado_Michi/Imagenes/Hacker.jpg";
+                img.width = 686;
+                img.height = 386;
+                img.alt = 'cacker';
+                document.ListaUsuarios.appendChild(img);
+
+
+
                 ListaUsuarios.appendChild(li);
+                }
 
 
 
             })
+
+
 
             verdadMostrada = true;
     }
@@ -324,6 +342,9 @@ function catDispenser() {
             300, 200,"Michencio");
         
 }
+
+
+
 
 function show_image(src, width, height,alt) {
     // Create a new image element
