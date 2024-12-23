@@ -10,32 +10,42 @@
 
 const productos = {
     MichiChatran: { 
+        id: 'MichiChatran',
         nombre: 'Michi Chatran', 
+        descripcion: 'El famoso Chatran mencionado por bandas de cumbia como Damas Gratis y Los Gedes.',
         precio: 1200, 
         stock: 1,
         descuento: 0.01  // 5% de descuento
     },
     MichiViolento: { 
+        id: 'MichiViolento',
         nombre: 'Michi Violento', 
+        descripcion: 'Este gato sufre de ataques de ira provocados por un profundo daño neuronal  proveniente del abuso de inhalantes como el poxiran.',
         precio: 666, 
         stock: 666,
         descuento: 0.6  // 10% de descuento
     },
     GatoEnergumeno: { 
+        id: 'GatoEnergumeno',
         nombre: 'Gato Energumeno', 
+        descripcion: 'Este es mas picante aun, cuidado.',
         precio: 118, 
         stock: 10,
         descuento: 0.5  // 10% de descuento
     },
     GatoApacible: { 
+        id: 'GatoApacible',
         nombre: 'Gato Apacible', 
+        descripcion: 'Gato ideal para aquellos hobbistas de felinos que recien comienzan. ',
         precio: 120, 
         stock: 10,
         descuento: 0.1  // 10% de descuento
     },
 
     GatoArgentino: { 
-        nombre: 'Gato Argentino', 
+        id: 'GatoArgentino',
+        nombre: 'Gato Argentino',
+        descripcion: 'Mas Argentino que la sopa Paraguaya.',
         precio: 100, 
         stock: 50,
         descuento: 0  // Sin descuento
@@ -54,6 +64,7 @@ localStorage.setItem("carritoStorage", JSON.stringify(carrito) );
 var campos = document.querySelectorAll("label > textarea , label > input");
 chequearCamposLlenos(campos);
 
+
 // console.log(campos);
 
 // let botonPegar = document.querySelector('#pegar');
@@ -62,6 +73,12 @@ chequearCamposLlenos(campos);
 // chequearCamposLlenos(campos)
 
 // });
+
+function MasInformacion(id){
+    let producto = productos[id];
+    document.querySelector('.descripcion-extra-' +  id).innerHTML = producto.descripcion;
+
+}
 
 function Producto(nombre, precio, id){
      this.nombre = nombre;
@@ -91,6 +108,12 @@ function agregarAlCarrito(nombre,precio,id){
     var carritoLoad = localStorage.getItem("carritoStorage")
     carritoLoad = JSON.parse(carritoLoad);
     carritoLoad.push(new Producto(gatubelo.nombre,gatubelo.precio, id));
+
+    gatubelo.stock--;
+    document.querySelector(".stock-" + id).innerHTML = "stock:" + gatubelo.stock;
+    
+
+
     localStorage.removeItem("carritoStorage");
     localStorage.setItem("carritoStorage", JSON.stringify(carritoLoad));
 
