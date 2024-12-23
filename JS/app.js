@@ -82,7 +82,6 @@ function cargarIluminati(){
             .then(data=>  {
                 const listaEntera = JSON.stringify(data);
                 var myArray = listaEntera.split("{");
-                var myArray = listaEntera.split("}");
 
                 for(i=0; i < myArray.length; i++){
                 const li = document.createElement('li');
