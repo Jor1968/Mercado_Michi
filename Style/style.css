@@ -228,8 +228,6 @@ button:hover{
   flex-direction: column;
   background: rgb(238,174,202);
   background-color: rgba(112, 98, 98, 0.747);
-  margin: 4rem;
-  padding: 4rem;
   font-size: 1.2rem;
   max-height:100%;
   max-width:100%;
