@@ -53,8 +53,13 @@ const productos = {
     }
 };
 const IVA = 0.21
-var carrito = [];
-localStorage.setItem("carritoStorage", JSON.stringify(carrito) );
+
+if (localStorage.getItem("carritoStorage") === null) {
+    var carrito = [];
+    localStorage.setItem("carritoStorage", JSON.stringify(carrito) );
+
+  }
+
 
 document.addEventListener('DOMContentLoaded', cargarCarrito);
 
