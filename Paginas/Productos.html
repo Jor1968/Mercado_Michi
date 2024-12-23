@@ -95,14 +95,47 @@
     <main class="flex-container">
 
 
+
+<!-- 
+        <div id="checkout-modal" >
+        <div class="checkout-content">
+
+
+        <button id="realizar-compra">Vaciar Carrito</button>
+        <button id="cerrar-checkout">Checkout</button>
+          
+
+
+
+
+        </div>
+
+        </div> -->
+
+
     
         <div class="tarjeta">
+
+          <div id="carrito">
+
+            <h2>Carrito de Compras</h2>
+            
+            <ul id="lista-carrito"></ul>
+            <p>Subtotal: $<span id="subtotal-carrito"> 0</span></p>
+            <p>Descuento: $<span id="descuento-carrito"> 0</span></p>
+            <p>IVA (21%): $<span id="iva-carrito"> 0</span></p>
+            <p><strong>Total: $<span id="total-carrito"> 0</span></strong></p>
+            
+            <button id="vaciar-carrito">Vaciar Carrito</button>
+            <button id="mostrarCheckout">Checkout</button>
+            
+            </div>
     
             <img src="../Imagenes/GatoDamasGratis.png" alt="GatoDamasGratis">
             <h1>Michi Chatran</h1>
             <p>1200$ </p>
             <p>El famoso Chatran mencionado por bandas de cumbia como Damas Gratis y Los Gedes. </p>
-            <p><button>Comprar</button></p>
+            <p><button onclick="agregarAlCarrito('Michi Chatran', 1200, 'MichiChatran')">Comprar</button></p>
     
         </div>
 
@@ -114,7 +147,7 @@
             <p>Este gato sufre de ataques de ira provocados por un profundo daño neuronal <p>
 
             proveniente del abuso de inhalantes como el poxiran. </p> </p>
-            <p><button>Comprar</button></p>
+            <p><button onclick="agregarAlCarrito('Michi Violento', 666, 'MichiViolento')">Comprar</button></p>
     
         </div>
 
@@ -124,7 +157,7 @@
             <h1>Gato Energumeno</h1>
             <p>118$ </p>
             <p>Este es mas picante aun, cuidado. </p>
-            <p><button>Comprar</button></p>
+            <p><button onclick="agregarAlCarrito('Gato Energumeno', 118, 'GatoEnergumeno')">Comprar</button></p>
     
         </div>
         <div class="tarjeta">
@@ -133,7 +166,7 @@
             <h1>Gato Apacible</h1>
             <p>120$ </p>
             <p>Gato ideal para aquellos hobbistas de felinos que recien comienzan. </p>
-            <p><button>Comprar</button></p>
+            <p><button onclick="agregarAlCarrito('Gato Apacible', 120, 'GatoApacible')">Comprar</button></p>
     
         </div>
 
@@ -143,7 +176,7 @@
             <h1>Gato Argentino</h1>
             <p>100$ </p>
             <p>Mas Argentino que la sopa Paraguaya. </p>
-            <p><button>Comprar</button></p>
+            <p><button onclick="agregarAlCarrito('Gato Argentino', 100, 'GatoArgentino')">Comprar</button></p>
     
         </div>
 

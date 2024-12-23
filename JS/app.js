@@ -1,50 +1,100 @@
 
-var a = 3;
-
-var boollo = true;
-
 // if((typeof(Storage)) !== 'undefined'){
 //     alert('localstorage disponible')
 // }else{
 //     alert('local storage not disponible')
 // }
 
-
-
-
-
 //let nombre = prompt("ingrese un nombre");
-//console.log(nombre);
-//alert(nombre);
-
-// let btn = document.querySelector('#btn1');
-// btn.addEventListener('click', ()=> {
-//     let nuevoNombre = document.querySelector('#nuevoNombre')
-//     document.querySelector('#nombre').innerHTML = nuevoNombre.value
-// });
 
 
+const productos = {
+    MichiChatran: { 
+        nombre: 'Michi Chatran', 
+        precio: 1200, 
+        stock: 1,
+        descuento: 0.01  // 5% de descuento
+    },
+    MichiViolento: { 
+        nombre: 'Michi Violento', 
+        precio: 666, 
+        stock: 666,
+        descuento: 0.6  // 10% de descuento
+    },
+    GatoEnergumeno: { 
+        nombre: 'Gato Energumeno', 
+        precio: 118, 
+        stock: 10,
+        descuento: 0.5  // 10% de descuento
+    },
+    GatoApacible: { 
+        nombre: 'Gato Apacible', 
+        precio: 120, 
+        stock: 10,
+        descuento: 0.1  // 10% de descuento
+    },
+
+    GatoArgentino: { 
+        nombre: 'Gato Argentino', 
+        precio: 100, 
+        stock: 50,
+        descuento: 0  // Sin descuento
+    }
+};
+const IVA = 0.21
+
+//document.addEventListener('DOMContentLoaded', cargarCarrito);
 
 
-
+var carrito = [];
+localStorage.setItem("carritoStorage", JSON.stringify(carrito) );
 
 
 
 var campos = document.querySelectorAll("label > textarea , label > input");
-
-
 chequearCamposLlenos(campos);
-console.log(campos);
 
-let botonPegar = document.querySelector('#pegar');
-botonPegar.addEventListener('click', ()=> {
-chequearCamposLlenos(campos)
-// console.log(cadenasTodasLlenas(campos));
-// console.log(campos[0].value)
-// console.log(campos[1].value)
-// console.log(campos[2].value)
-});
+// console.log(campos);
 
+// let botonPegar = document.querySelector('#pegar');
+// botonPegar.addEventListener('click', ()=> {
+//     obtenerLocalStorage();
+// chequearCamposLlenos(campos)
+
+// });
+
+function Producto(nombre, precio, id){
+     this.nombre = nombre;
+     this.precio = precio;
+     this.id = id
+
+ }
+
+function obtenerLocalStorage(nombre){
+    let objeto = (localStorage.getItem('michiObjeto'));
+    console.log(objeto);
+
+}
+
+
+
+function agregarAlCarrito(nombre,precio,id){
+    const gatubelo = productos[id];
+ 
+    if (gatubelo.stock <= 0) {
+        alert('¡Producto agotado!');
+        return;
+    }
+
+
+
+    var carritoLoad = localStorage.getItem("carritoStorage")
+    carritoLoad = JSON.parse(carritoLoad);
+    carritoLoad.push(new Producto(gatubelo.nombre,gatubelo.precio, id));
+    localStorage.removeItem("carritoStorage");
+    localStorage.setItem("carritoStorage", JSON.stringify(carritoLoad));
+
+}
 
 function chequearCamposLlenos(campos){
     if(cadenasTodasLlenas(campos)){
@@ -72,17 +122,10 @@ return estaLlena;
 }
 
 
-
-
-
 function goToURL(url){
     window.location = url;
 }
 
-
-function formularioLleno(url){
-    
-}
 
 function catDispenser() {
     alert("Michi!");
@@ -111,6 +154,3 @@ function Quack(){
 var audio = new Audio("https://jor1968.github.io/Mercado_Michi/Sonidos/Quack.mp3");
 audio.play();
 }
-
-//alert(nombre)
-
