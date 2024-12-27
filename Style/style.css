@@ -264,10 +264,11 @@ button:hover{
   padding: 4rem;
   font-size: 2rem;
   font-weight: 2rem;
+  
 
 
 }
-.Formulario > textarea{
+.Formulario > * > textarea{
   resize: none 
 
 }
@@ -325,4 +326,37 @@ footer{
       .italianno-regular {
         font-size: 6.5rem;
       }
+}
+
+
+.colorAnim{
+font-family:'MS Comic Sans';
+width: auto;
+height: auto;
+font-size: 200%;
+background-color: rgb(0, 0, 0);
+opacity: 75%;
+animation-name: example;
+animation-duration: 4s;
+animation-name: anim;
+animation-duration: 5;
+animation-iteration-count: infinite;
+
+}
+
+
+
+
+
+
+@keyframes anim {
+  25% {
+    color: #9d00bd;
+  }
+  50% {
+    color: #FF7A59;
+  }
+  75% {
+    color: #fff238d5;
+}
 }
