@@ -10,5 +10,7 @@ Reseñas tiene 4 obamas distribuidos forma de grid.
 
 Se importo fuentes de google fonts y algunas cosas de bootstrap para el navbar.
 
+Los nombres de los commits no tienen mucho sentido por razones de productividad.
+
 
  
